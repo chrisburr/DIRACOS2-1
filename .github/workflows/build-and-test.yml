@@ -7,7 +7,6 @@ on:
 jobs:
   build-installer:
     name: Build installer
-    if: github.repository == 'DIRACGrid/DIRACOS2'
     runs-on: ubuntu-latest
     defaults:
       run:
