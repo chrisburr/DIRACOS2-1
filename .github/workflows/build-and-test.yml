@@ -1,6 +1,8 @@
 name: Build and test installer
 on:
   push:
+    branches:
+      - debug
 
 jobs:
   build-installer:
