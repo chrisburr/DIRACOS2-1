@@ -16,7 +16,8 @@ exec docker run --rm --privileged -v "${PWD}":/diracos-repo "${IMAGE_NAME}" bash
   chown tester:tester "${workdir}"
   install_home="${workdir}/home"
   mkdir "${install_home}"
-  chmod -R 500 "${install_home}"
+  chown tester:tester "${install_home}"
+  chmod 500 "${install_home}"
   runuser -u tester -- env HOME="${install_home}" \
     bash -c "cd \"${workdir}\" && bash /diracos-repo/'"${DIRACOS_INSTALLER}"'"
   # Run the post-install test suite as root with a normal $HOME (test_cli.sh
