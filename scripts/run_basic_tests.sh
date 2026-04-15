@@ -20,9 +20,10 @@ exec docker run --rm --privileged -v "${PWD}":/diracos-repo "${IMAGE_NAME}" bash
   chmod 500 "${install_home}"
   runuser -u tester -- env HOME="${install_home}" \
     bash -c "cd \"${workdir}\" && bash /diracos-repo/'"${DIRACOS_INSTALLER}"'"
-  # Run the post-install test suite as root with a normal $HOME (test_cli.sh
-  # exercises tools like singularity/apptainer that need root or namespace
-  # privileges, not exercised by the installer).
+  # Restore normal permissions for the post-install test suite (singularity
+  # user-namespace mapping cannot traverse tester-owned dirs).
+  chown -R root:root "${workdir}"
+  chmod 755 "${workdir}" "${install_home}"
   cd "${workdir}"
   source diracos/diracosrc
   pytest -v /diracos-repo/tests/test_import.py
