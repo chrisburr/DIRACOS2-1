@@ -7,9 +7,17 @@ platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64"]
 [dependencies]
 python = ">=3.12"
 pip = "*"
-constructor = "*"
 libmambapy = "*"
 micromamba = "*"
+conda = ">=4.6"
+conda-standalone = "*"
+jinja2 = "*"
+jsonschema = ">=4"
+pillow = ">=3.1"
+"ruamel.yaml" = ">=0.11.14,<0.19"
+
+[pypi-dependencies]
+constructor = { git = "https://github.com/chrisburr/constructor.git", branch = "fix/mkdir-conda-guard" }
 
 # Feature for release scripts (separate environment, excludes build deps)
 [feature.release.dependencies]
