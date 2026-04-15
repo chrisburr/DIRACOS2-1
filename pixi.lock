@@ -125,7 +125,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zlib-ng-2.3.3-hceb46e0_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.25.0-py313h54dd161_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda
-      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#62aa99cf8169a0313a957dbccf3cba77e615f27e
+      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#7469edfb2e8ecb8bd4f5e0e79049fc952fd8872e
       linux-aarch64:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/_openmp_mutex-4.5-2_gnu.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/archspec-0.2.5-pyhd8ed1ab_0.conda
@@ -242,7 +242,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/zlib-ng-2.3.3-ha7cb516_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/zstandard-0.25.0-py313h62ef0ea_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-aarch64/zstd-1.5.7-h85ac4a6_6.conda
-      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#62aa99cf8169a0313a957dbccf3cba77e615f27e
+      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#7469edfb2e8ecb8bd4f5e0e79049fc952fd8872e
       osx-64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/archspec-0.2.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-25.4.0-pyhcf101f3_1.conda
@@ -350,7 +350,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zlib-ng-2.3.2-h8bce59a_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstandard-0.25.0-py313hcb05632_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstd-1.5.7-h3eecb57_6.conda
-      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#62aa99cf8169a0313a957dbccf3cba77e615f27e
+      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#7469edfb2e8ecb8bd4f5e0e79049fc952fd8872e
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/archspec-0.2.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/attrs-25.4.0-pyhcf101f3_1.conda
@@ -459,7 +459,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zlib-ng-2.3.2-hed4e4f5_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.25.0-py313h9734d34_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
-      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#62aa99cf8169a0313a957dbccf3cba77e615f27e
+      - pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#7469edfb2e8ecb8bd4f5e0e79049fc952fd8872e
   release:
     channels:
     - url: https://conda.anaconda.org/conda-forge/
@@ -1320,9 +1320,9 @@ packages:
   purls: []
   size: 20143699
   timestamp: 1733425438291
-- pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#62aa99cf8169a0313a957dbccf3cba77e615f27e
+- pypi: git+https://github.com/chrisburr/constructor.git?branch=fix%2Fmkdir-conda-guard#7469edfb2e8ecb8bd4f5e0e79049fc952fd8872e
   name: constructor
-  version: 3.2.3.dev494+g62aa99cf8
+  version: 3.2.3.dev495+g7469edfb2
   requires_dist:
   - conda>=4.6
   - ruamel-yaml>=0.11.14,<0.19
